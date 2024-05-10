@@ -1,0 +1,75 @@
+.ng-modal-number-container {
+    margin-top: 22px;
+
+    /* border-top: 1px solid black; */
+    width: auto;
+    margin-left: 570px;
+    justify-content: center; 
+
+    margin-top: 100px;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .line {
+    position: absolute; /* Change position to absolute */
+    width: 40%; /* Adjust width to cover the container */
+    height: 1px; /* Set the height of the line */
+    background-color: black; /* Set the color of the line */
+    top: 50%; /* Position the line vertically in the middle */
+    z-index: 0; /* Lower z-index to place it below circles */
+  }
+  
+  .questionNumbers {
+    display: flex;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Ensure circles are stacked above the line */
+  }
+  
+  .questionNumberIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+    font-size: 18px;
+    position: relative;
+    color: #000;
+    line-height: 45px;
+    z-index: 1; /* Set z-index higher to stack above the line */
+    text-align: center;
+    background: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .questionNumberIcon.active {
+    background-color: rgb(81, 19, 65);
+    color: white;
+  }
+  .quesBox{
+    width: 1490px;
+    height: 100px;
+    background-color: #5F57B5;
+    color: #fff;
+     padding: 20px;
+  }
+  .ansBox{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    font-size: 40px;
+
+  }
+  .a{
+    border: 5px solid hsl(282, 81%, 66%);
+    border-radius: 4px;
+     height: 70px;
+     font-size: 20px;
+     padding: 10px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ .a:hover{
+    background-color:hsl(282, 81%, 66%);
+ }
